@@ -281,7 +281,7 @@ trait StubbedCT600BoxRetriever extends CT600BoxRetriever with StubbedAccountsBox
 
   override def retrieveCP502(): CP502 = ???
 
-  override def retrieveCP81Input(): CP81Input = ???
+  override def retrieveCP81(): CP81 = ???
 
   override def retrieveCP16(): CP16 = ???
 
