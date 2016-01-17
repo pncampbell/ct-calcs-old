@@ -18,6 +18,7 @@ package uk.gov.hmrc.ct.box
 
 import org.joda.time.LocalDate
 
+// TODO: split into type converters and option resolvers
 trait CtTypeConverters {
   implicit def convert(catoBoolean: CtBoolean) : Boolean = catoBoolean.value
   implicit def convert(catoInt: CtInteger) : Int = catoInt.value

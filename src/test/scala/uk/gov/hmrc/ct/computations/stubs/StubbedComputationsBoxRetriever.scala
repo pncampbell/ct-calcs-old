@@ -141,7 +141,7 @@ class StubbedComputationsBoxRetriever extends ComputationsBoxRetriever with Stub
 
   override def retrieveCPQ21(): CPQ21 = ???
 
-  override def retrieveCP81Input(): CP81Input = ???
+  override def retrieveCP81(): CP81 = ???
 
   override def retrieveCP16(): CP16 = ???
 
