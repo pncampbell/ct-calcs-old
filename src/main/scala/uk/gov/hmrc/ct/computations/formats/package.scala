@@ -144,7 +144,7 @@ package object formats {
 
   implicit val cp86Format: Format[CP86] = new OptionalIntegerFormat[CP86](CP86.apply)
 
-  implicit val cp87InputFormat: Format[CP87Input] = new OptionalIntegerFormat[CP87Input](CP87Input.apply)
+  implicit val cp87Format: Format[CP87] = new OptionalIntegerFormat[CP87](CP87.apply)
 
   implicit val cp88Format: Format[CP88] = new OptionalIntegerFormat[CP88](CP88.apply)
 

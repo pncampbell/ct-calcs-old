@@ -101,7 +101,7 @@ class LowEmissionCarsAcceptanceCriteriaSpec extends WordSpec with Matchers {
          cp83: Option[Int],
          cp667: Option[Int],
          cp672: Option[Int],
-         cp87_Input: Option[Int],
+         cp87: Option[Int],
          cp668: Option[Int],
          cp670: Option[Int],
          cp88: Option[Int],
@@ -119,7 +119,7 @@ class LowEmissionCarsAcceptanceCriteriaSpec extends WordSpec with Matchers {
             cp81 = cp81,
             cp82 = cp82,
             cp83 = cp83,
-            cp87Input = cp87_Input,
+            cp87 = cp87,
             cp88 = cp88,
             cp89 = cp89,
             cp666 = cp666,
@@ -129,7 +129,7 @@ class LowEmissionCarsAcceptanceCriteriaSpec extends WordSpec with Matchers {
           ) with StubbedAccountsBoxRetriever
 
           assert(retriever.retrieveCP81().value equals cp81, scenario)
-          assert(retriever.retrieveCP87().value equals cp87_Input.getOrElse(fail("Missing value for CP87 Input")), scenario)
+          assert(retriever.retrieveCP87().value equals cp87, scenario)
 
           assert(retriever.retrieveCP91().value equals cp91, clue("CP91", retriever.retrieveCP91().value, cp91))
           assert(retriever.retrieveCP92().value equals cp92, clue("CP92", retriever.retrieveCP92().value, cp92))
@@ -145,7 +145,7 @@ class LowEmissionCarsAcceptanceCriteriaSpec extends WordSpec with Matchers {
       Table(
         ("Scenario",
           "LEC01",
-          "CPQ8", "CP78", "CP666", "CP674", "CP81_Input", "CP82", "CP83", "CP84", "CP673",
+          "CPQ8", "CP78", "CP666", "CP674", "CP81", "CP82", "CP83", "CP84", "CP673",
           "CP90", "CP186", "CP91", "CP671", "CP92", "CP669"),
 
         ("Scenario 6 - Company not trading, higher disposals than allowances: balancing charges.",
@@ -227,7 +227,7 @@ class LowEmissionCarsAcceptanceCriteriaSpec extends WordSpec with Matchers {
                                   cp82: Option[Int] = None,
                                   cp83: Option[Int] = None,
                                   cp84: Option[Int] = None,
-                                  cp87Input: Option[Int] = None,
+                                  cp87: Option[Int] = None,
                                   cp88: Option[Int] = None,
                                   cp89: Option[Int] = None,
                                   cp666: Option[Int] = None,
@@ -264,7 +264,7 @@ class LowEmissionCarsAcceptanceCriteriaSpec extends WordSpec with Matchers {
 
     override def retrieveCP674: CP674 = CP674(cp674)
 
-    override def retrieveCP87Input: CP87Input = CP87Input(cp87Input)
+    override def retrieveCP87: CP87 = CP87(cp87)
 
     override def retrieveCP88: CP88 = CP88(cp88)
 

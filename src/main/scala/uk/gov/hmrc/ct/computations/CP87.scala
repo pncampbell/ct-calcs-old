@@ -18,9 +18,9 @@ package uk.gov.hmrc.ct.computations
 
 import uk.gov.hmrc.ct.box._
 
-case class CP87(value: Int) extends CtBoxIdentifier(name = "Total first year allowance claimed") with CtInteger
+case class CP87(value: Option[Int]) extends CtBoxIdentifier(name = "First year allowance claimed") with CtOptionalInteger with Input
 
-object CP87 extends Linked[CP87Input, CP87] with CtTypeConverters {
+object CP87 {
 
-  override def apply(cp87Input: CP87Input): CP87 = new CP87(cp87Input)
+  def apply(int: Int): CP87 = new CP87(Some(int))
 }
