@@ -121,10 +121,6 @@ trait ComputationsBoxRetriever extends BoxRetriever {
 
   def retrieveCP84(): CP84
 
-  def retrieveCP85(): CP85
-
-  def retrieveCP86(): CP86
-
   def retrieveCP87(): CP87
 
   def retrieveCP88(): CP88

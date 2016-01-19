@@ -189,8 +189,6 @@ trait StubbedCT600BoxRetriever extends CT600BoxRetriever with StubbedAccountsBox
 
   override def retrieveLEC01(): LEC01 = ???
 
-  override def retrieveCP86(): CP86 = ???
-
   override def retrieveAP2(): AP2 = ???
 
   override def retrieveCPQ17(): CPQ17 = ???
@@ -244,8 +242,6 @@ trait StubbedCT600BoxRetriever extends CT600BoxRetriever with StubbedAccountsBox
   override def retrieveCP29(): CP29 = ???
 
   override def retrieveCP8(): CP8 = ???
-
-  override def retrieveCP85(): CP85 = ???
 
   override def retrieveAP1(): AP1 = ???
 

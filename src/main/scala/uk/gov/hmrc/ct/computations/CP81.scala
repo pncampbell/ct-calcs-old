@@ -17,9 +17,6 @@
 package uk.gov.hmrc.ct.computations
 
 import uk.gov.hmrc.ct.box._
-import uk.gov.hmrc.ct.computations.calculations.TotalExpenditureQualifyingForTheFirstYearAllowanceCalculator
-import uk.gov.hmrc.ct.computations.retriever.ComputationsBoxRetriever
-import uk.gov.hmrc.ct.ct600.v2.B108
 
 case class CP81(value: Option[Int]) extends CtBoxIdentifier(name = "Expenditure qualifying for first year allowance (FYA)") with CtOptionalInteger with Input
 

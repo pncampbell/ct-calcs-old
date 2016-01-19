@@ -49,8 +49,6 @@ class StubbedComputationsBoxRetriever extends ComputationsBoxRetriever with Stub
 
   override def retrieveCP281(): CP281 = ???
 
-  override def retrieveCP86(): CP86 = ???
-
   override def retrieveLEC01(): LEC01 = ???
 
   override def retrieveAP2(): AP2 = ???
@@ -106,8 +104,6 @@ class StubbedComputationsBoxRetriever extends ComputationsBoxRetriever with Stub
   override def retrieveCP29(): CP29 = ???
 
   override def retrieveCP8(): CP8 = ???
-
-  override def retrieveCP85(): CP85 = ???
 
   override def retrieveCP79(): CP79 = ???
 
