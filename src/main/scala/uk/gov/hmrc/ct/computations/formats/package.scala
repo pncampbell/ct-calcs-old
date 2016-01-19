@@ -128,10 +128,6 @@ package object formats {
 
   implicit val cp78Format: Format[CP78] = new OptionalIntegerFormat[CP78](CP78.apply)
 
-  implicit val cp79Format: Format[CP79] = new OptionalIntegerFormat[CP79](CP79.apply)
-
-  implicit val cp80Format: Format[CP80] = new OptionalIntegerFormat[CP80](CP80.apply)
-
   implicit val cp81Format: Format[CP81] = new OptionalIntegerFormat[CP81](CP81.apply)
 
   implicit val cp82Format: Format[CP82] = new OptionalIntegerFormat[CP82](CP82.apply)
@@ -156,11 +152,7 @@ package object formats {
 
   implicit val cp93Format: Format[CP93] = new OptionalIntegerFormat[CP93](CP93.apply)
 
-  implicit val cp95Format: Format[CP95] = new OptionalIntegerFormat[CP95](CP95.apply)
-
   implicit val cp96Format: Format[CP96] = new OptionalIntegerFormat[CP96](CP96.apply)
-
-  implicit val cp98Format: Format[CP98] = new OptionalIntegerFormat[CP98](CP98.apply)
 
   implicit val cp99Format: Format[CP99] = new IntegerFormat[CP99](CP99.apply)
 
@@ -220,8 +212,6 @@ package object formats {
 
   implicit val cp251Format: Format[CP251] = new IntegerFormat[CP251](CP251.apply)
 
-  implicit val cp252Format: Format[CP252] = new IntegerFormat[CP252](CP252.apply)
-
   implicit val cp253Format: Format[CP253] = new IntegerFormat[CP253](CP253.apply)
 
   implicit val cp256Format: Format[CP256] = new IntegerFormat[CP256](CP256.apply)
@@ -241,8 +231,6 @@ package object formats {
   implicit val cp273Format: Format[CP273] = new IntegerFormat[CP273](CP273.apply)
 
   implicit val cp274Format: Format[CP274] = new IntegerFormat[CP274](CP274.apply)
-
-  implicit val cp278Format: Format[CP278] = new IntegerFormat[CP278](CP278.apply)
 
   implicit val cp279Format: Format[CP279] = new OptionalIntegerFormat[CP279](CP279.apply)
 

@@ -109,10 +109,6 @@ trait ComputationsBoxRetriever extends BoxRetriever {
 
   def retrieveCP78(): CP78
 
-  def retrieveCP79(): CP79
-
-  def retrieveCP80(): CP80
-
   def retrieveCP81(): CP81
 
   def retrieveCP82(): CP82
@@ -175,11 +171,7 @@ trait ComputationsBoxRetriever extends BoxRetriever {
 
   def retrieveCP93(): CP93 = CP93(retrieveCP186())
 
-  def retrieveCP95(): CP95 = CP95(retrieveCP93())
-
   def retrieveCP96(): CP96 = CP96(retrieveCP91())
-
-  def retrieveCP98(): CP98 = CP98(retrieveCP96())
 
   def retrieveCP99(): CP99 = CP99.calculate(this)
 
@@ -233,8 +225,6 @@ trait ComputationsBoxRetriever extends BoxRetriever {
 
   def retrieveCP251(): CP251 = CP251(retrieveCP81())
 
-  def retrieveCP252(): CP252 = CP252(retrieveCP79())
-
   def retrieveCP253(): CP253 = CP253.calculate(this)
 
   def retrieveCP256(): CP256 = CP256.calculate(this)
@@ -254,8 +244,6 @@ trait ComputationsBoxRetriever extends BoxRetriever {
   def retrieveCP273(): CP273 = CP273(retrieveCP251())
 
   def retrieveCP274(): CP274 = CP274(retrieveCP253())
-
-  def retrieveCP278(): CP278 = CP278(retrieveCP252())
 
   def retrieveCP279(): CP279 = CP279(retrieveCP88())
 
