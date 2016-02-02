@@ -164,6 +164,8 @@ package object formats {
 
   implicit val b172Format: Format[B172] = new OptionalIntegerFormat[B172](B172.apply)
 
+  implicit val b174Format: Format[B174] = new IntegerFormat[B174](B174.apply)
+
   implicit val b153Format: Format[B153] = new OptionalStringFormat[B153](B153.apply)
 
   implicit val b155Format: Format[B155] = new StringFormat[B155](B155.apply)
